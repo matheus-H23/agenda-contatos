@@ -7,6 +7,9 @@
       address:
         one: "Endereço"
         other: "Endereços"
+      phone:
+        one: "Telefone"
+        other: "Telefones"
     attributes:
       contact:
         name: "Nome"
@@ -18,5 +21,9 @@
         street: "Rua"
         city: "Cidade"
         state: "Estado"
+        contact: "Contato"
+        contact_id: "Contato"
+      phone:
+        phone: "Telefone"
         contact: "Contato"
         contact_id: "Contato"

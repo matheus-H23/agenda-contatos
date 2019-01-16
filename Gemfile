@@ -4,7 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.5.3'
 
 # A runtime developer console and IRB alternative with powerful introspection capabilities.
-gem 'pry'
+# gem 'pry'
+# Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
+gem 'cocoon'
+# This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
+gem 'jquery-rails'
 # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
 gem 'lerolero_generator'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -47,6 +51,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  # Rails >= 3 pry initializer
+  gem 'pry-rails'
 end
 
 group :development do
