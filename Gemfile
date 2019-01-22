@@ -19,7 +19,7 @@ gem 'bundler', '>= 1.8.4'
 source 'https://rails-assets.org' do
 
   gem 'rails-assets-notifyjs'
-  
+
   gem 'rails-assets-bootstrap'
 
 end
@@ -30,8 +30,6 @@ gem 'jquery-rails'
 gem 'lerolero_generator'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.2'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -70,6 +68,8 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Rails >= 3 pry initializer
   gem 'pry-rails'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :development do
@@ -87,6 +87,12 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+end
+
+group :production do
+  # Heroku Dependences 
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
