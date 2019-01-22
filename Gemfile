@@ -5,8 +5,25 @@ ruby '2.5.3'
 
 # A runtime developer console and IRB alternative with powerful introspection capabilities.
 # gem 'pry'
+# A Scope & Engine based, clean, powerful, customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari'
+# i18n para kaminari
+gem 'kaminari-i18n'
 # Dynamic nested forms using jQuery made easy; works with formtastic, simple_form or default forms http://github.com/nathanvda/cocoon
 gem 'cocoon'
+# Bundler
+gem 'bundler', '>= 1.8.4'
+
+# JS Rails assets
+
+source 'https://rails-assets.org' do
+
+  gem 'rails-assets-notifyjs'
+  
+  gem 'rails-assets-bootstrap'
+
+end
+
 # This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
 gem 'jquery-rails'
 # O Lero-lero Generator é uma ferramenta capaz de gerar frases que 'falam' muita coisa mas que não tem conteúdo algum.
